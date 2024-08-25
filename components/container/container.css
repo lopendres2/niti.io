@@ -1,0 +1,22 @@
+/* container.css */
+
+.app {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+}
