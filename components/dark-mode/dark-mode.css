@@ -1,0 +1,23 @@
+/* dark-mode.css */
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+        color: #f5f5f5;
+    }
+
+    .item, .usercard {
+        background-color: #333;
+        color: #f5f5f5;
+        box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    }
+
+    .btn {
+        background-color: #006bb3;
+    }
+
+    .btn:hover {
+        background-color: #004080;
+    }
+}
+ 

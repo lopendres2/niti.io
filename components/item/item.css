@@ -1,0 +1,59 @@
+/* item.css */
+
+.item {
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(50% - 10px);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img__box {
+    width: 100%;
+    padding-top: 150%; /* Aspect ratio of 3:4 (247px height / 165px width) */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the box and maintains its aspect ratio */
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.name_item {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.btn {
+    background-color: #0088cc;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: auto; /* Pushes the button to the bottom of the flex container */
+}
+
+.btn:hover {
+    background-color: #005f99;
+}
+ 
