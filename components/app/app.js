@@ -33,8 +33,10 @@ Telegram.WebApp.onEvent("mainButtonClicked", function() {
 let usercard = document.getElementById("usercard");
 
 if (tg.initDataUnsafe && tg.initDataUnsafe.user) {
+    let firstName = tg.initDataUnsafe.user.first_name || "";
+    let lastName = tg.initDataUnsafe.user.last_name || "";
     let p = document.createElement("p");
-    p.innerText = `${tg.initDataUnsafe.user.first_name} ${tg.initDataUnsafe.user.last_name}`;
+    p.innerText = `${firstName} ${lastName}`.trim();
     usercard.appendChild(p);
 } else {
     console.error("Telegram user data is not available.");
